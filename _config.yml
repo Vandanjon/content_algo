@@ -1,8 +1,5 @@
 remote_theme: WildCodeSchool/workshops-jekyll-theme
 
-title_from_headings:
-  enabled: true
-
 style: dev
 lang: fr
 show_clone: true
