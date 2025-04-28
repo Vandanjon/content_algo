@@ -1,0 +1,11 @@
+remote_theme: WildCodeSchool/workshops-jekyll-theme
+
+title_from_headings:
+  enabled: false
+
+style: dev
+lang: fr
+show_clone: true
+title: "Réussissez vos algos"
+description: "comme une bête"
+main_image:
