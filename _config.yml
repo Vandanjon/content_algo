@@ -1,7 +1,7 @@
 remote_theme: WildCodeSchool/workshops-jekyll-theme
 
 title_from_headings:
-  enabled: false
+  enabled: true
 
 style: dev
 lang: fr
