@@ -23,7 +23,7 @@ Heureusement, dans cet exemple, pas besoin d'un algo compliqué. Il suffit de :
 
 - Prendre le prix unitaire d'un billet (disons qu'ils sont à 15€ pièce).
 - Prendre le nombre de billets commandés (on va dire qu'ici, c'est une famille de 4 personnes qui y va).
-- Multiplier les deux nombres (donc 15 * 4 = 60).
+- Multiplier les deux nombres (donc 15 * 4 = 60€).
 - Afficher le résultat sur le site en bas de page (là, on va devoir penser à modifier dynamiquement le HTML. Heureusement, les variables servent à ça.)
 
 Cette réflexion peut ensuite s'écrire dans n'importe quel langage de programmation.
@@ -49,8 +49,13 @@ Un algo est valide dans un cadre précis. Il sert à résoudre un problème clai
 Regarde le code ci-dessous, en JavaScript, il répond à cette demande. Donc, il est valide.
 
 
-`exemple1.html`
-```html
+<details markdown="1">
+<summary>
+Exemple 1 - Billets Hellfest
+</summary>
+
+```js
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -125,6 +130,9 @@ Regarde le code ci-dessous, en JavaScript, il répond à cette demande. Donc, il
 </body>
 </html>
 ```
+
+</details>
+
 
 Mais si demain, on doit également pouvoir avoir des réductions à partir d'un certain nombre de billets achetés ? il faudra changer la formule mathématique. Ou si le prix des billets change tous les 5000 billets achetés ? il faudra également changer notre algo. Etc, etc...
 
