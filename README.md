@@ -6,18 +6,40 @@
 Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique. Sans algorithmes, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'intéragir avec les utilisateurs.
 
 
-## Mise en situation
+### un algorithme doit finir
+
+### chaque étape doit avoir un et un seul but
+
+### pour une même entrée, une même sortie
+
+### un algorithme doit être le plus efficace possible
+
+
+## Les algos simples les plus récurrents
+
+### liste des algos et définition
+
+### mise en situation 1
+
+### mise en situation 2
+
+## challenge sur une autre page. 3 choix possibles
+
+
+
+
+#### Mise en situation
 
 Le [Hellfest](https://fr.wikipedia.org/wiki/Hellfest) démarre bientôt, et il faut d'urgence monter un site de vente de billets en ligne. Vous vous occupez de la partie qui affiche le prix à payer en fonction du nombre de billets commandés. La partie HTML/CSS en soit, c'est assez facile.
 
 Mais comment faire pour que le prix affiché en bas de page varie en fonction du nombre de billets ?
 
-## Les étapes de la réflexion
+#### Les étapes de la réflexion
 
 Ici, on a un gros indice pour savoir qu'il faut penser "algo" => le mot-clé **en fonction**. Quand je dois réfléchir à plusieurs possibilités, quand je dois conditionner des informations à d'autres informations, alors on doit écrire un algo.
 {: .alert-info }
 
-### décomposer le problème en éléments simples
+#### décomposer le problème en éléments simples
 
 Heureusement, dans cet exemple, pas besoin d'un algo compliqué. Il suffit de : 
 
@@ -42,7 +64,7 @@ fonction calculDuTotal( quantitéDeBilletsVoulus ) {
 }
 ```
 
-### valider un algo
+#### valider un algo
 
 Un algo est valide dans un cadre précis. Il sert à résoudre un problème clairement défini. Ici, on a voulu faire varier l'affichage d'un prix exigible aux clients en fonction des billets qu'ils voulaient acheter.
 
