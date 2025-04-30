@@ -23,6 +23,22 @@ rester simple, concis
 
 un algorithme peut se combiner à d'autres sans les court-circuiter. En théorie, une même entrée produit une même sortie. 
 
+
+Attention !
+un algo ce n'est pas : 
+- un programme
+- du code
+- intelligent (efficacité)
+{: .alert-warning }
+
+### techniques possibles
+J’écris en français étape par étape en essayant d’être le plus détaillé possible, et en découpant au maximum
+Une fois terminé, je traduis
+L’idée c’est que j’arrive à résoudre le problème comme si il m’arrivait dans la vie de tous les jours et que j’avais pas d’ordi
+
+
+
+
 ## Les algos simples les plus récurrents
 
 ### liste des algos et définition
