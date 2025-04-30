@@ -5,15 +5,23 @@
 
 Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique. Sans algorithmes, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'intéragir avec les utilisateurs.
 
+## Les caractéristiques d'un algorithme
 
-### un algorithme doit finir
+### une suite finie d'étapes simples
+Exemples :
 
-### chaque étape doit avoir un et un seul but
+Recette de cuisine
+Algorithme d’Euclide pour obtenir le pgcd de deux entiers
+Algorithme de conversion décimal/binaire
+Algorithmes de tris
 
-### pour une même entrée, une même sortie
+### chaque étape doit rapprocher du but final
 
-### un algorithme doit être le plus efficace possible
+rester simple, concis
 
+### pas d'effets de bords
+
+un algorithme peut se combiner à d'autres sans les court-circuiter. En théorie, une même entrée produit une même sortie. 
 
 ## Les algos simples les plus récurrents
 
