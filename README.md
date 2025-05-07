@@ -24,6 +24,7 @@ rester simple, concis
 
 un algorithme peut se combiner à d'autres sans les court-circuiter. En théorie, une même entrée produit une même sortie. 
 
+<a href="./docs/example1" target="_blank">TEST</a>
 
 Attention !
 un algo ne doit pas être confondu avec : 
