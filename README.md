@@ -1,47 +1,88 @@
-# Résoudre tous les algos
+# Réussir son entretien en algo
 
+
+# La théorie
 ## Déjà, qu'est-ce que c'est un algo ?
+Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique.  
 
-Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique. Sans algorithmes, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'intéragir avec les utilisateurs.
+Sans algorithmes, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'intéragir avec les utilisateurs.
+
 
 ## Les caractéristiques d'un algorithme
-### une suite finie d'étapes simples
+### Des étapes simples
+TOUTE tâche, même la plus complexe, peut être découpée en une **série d'étapes élémentaires**. C'est le même principe que le plus grand dénominateur commun en mathématiques ou un résumé de livre en littérature. (OU : C’est exactement comme lorsqu’on suit une recette de cuisine ou qu’on assemble un meuble : on suit des instructions claires, simples, dans un ordre précis.)
 
-Exemples :
+Exemple : Remplir un verre d'eau
+```md
+1. prendre un verre vide.  
+2. Ouvrir une bouteille d'eau.
+3. Verser l'eau dans le verre.
+```
 
-Recette de cuisine  
-Algorithme d’Euclide pour obtenir le pgcd de deux entiers  
-Algorithme de conversion décimal/binaire  
-Algorithmes de tris  
-
-
-### chaque étape doit rapprocher du but final
-
-rester simple, concis
+Donc : un algorithme doit être décomposable en étapes simples, compréhensibles et exécutables une à une, même par un humain sans formation particulière.
+{: .alert-info }
 
 
-### pas d'effets de bords
+### Une suite finie d'étapes
+Le but d'un algo est de résoudre un problème donné. Pour ce faire, il doit avoir une fin. On parle de **traitement déterminé** : il commence, fait son travail, et se termine.
 
-un algorithme peut se combiner à d'autres sans les court-circuiter. En théorie, une même entrée produit une même sortie. 
+Exemple : Remplir des verres d'eau.
+```md
+1. Compter le nombre de verres.
+2. prendre un verre vide.
+3. Ouvrir une bouteille d'eau si elle n'est pas déjà ouverte.
+4. Verser l'eau dans le verre choisi.
+5. Recommencer tant que tous les verres ne sont pas remplis.
+```
 
-<a href="./docs/example1" target="_blank">TEST</a>
+Donc : un algorithme doit être fini, c'est-à-dire qu'il se termine après un nombre défini d'actions.
+{: .alert-info }
+
+
+### La précision
+Un ordinateur applique très vite ce qu'on lui demande, mais il n'est pas vraiment capable de réfléchir. Il est **binaire** : "noir" ou "blanc". Il n'y a pas de **zone "grise"**. Donc, pour éviter qu'il plante dans l'exécution de notre algo, il faut être strict et explicite dans les instructions. Il faut éviter les mots ambigus comme « un peu », « environ », « peut-être », etc...
+
+Exemple : Déterminer si on est malade
+```md
+1. Si la température est supérieure à 38°C, afficher "Fièvre".
+2. Sinon, afficher "Température normale".
+```
+
+Donc : un algorithme doit être précis, c'est-à-dire que la machine doit savoir exactement quoi faire à chaque étape, sans interprétation possible.
+{: .alert-info }
+
+
+### Cibler ses conditions d'exécution
+Un algorithme prend des données pour effectuer un traitement puis donne un résultat (ou plusieurs). Ainsi, on sait précisément à quel moment dans notre futur programme on peut faire appel à notre algorithme ou non.
+
+Exemple : Déterminer si on est malade (exemple précédent)
+```md
+Données en entrée : une température de type nombre exprimée en degrés Celsius.
+
+Traitement : comparer à une température de type nombre exprimée en degrés Celsius et de valeur "38".
+
+Données en sortie : un message de type texte et de valeur "fièvre" ou de valeur "température normale". 
+```
+
+Donc : un algorithme prend des données précises en entrée et fournit des données précises en sortie.
+{: .alert-info }
 
 Attention !
 un algo ne doit pas être confondu avec : 
-- un programme
-- du code pur
-- un outil intelligent (efficacité)
 {: .alert-warning }
+- **du code pur** (un algo est un schéma de pensée, ce n'est pas du code)
+- **un programme** (qui est l'écriture d'un algo dans un langage informatique)
+- **un outil intelligent** (un algo peut être gourmand, mal écrit. Il manque la notion d'optimisation que nous n'avons pas abordée)
 
 
-
+# La pratique
 ## Les algos les plus récurrents
 ### liste des algos utiles pour les développeurs juniors
 
 #### Recherche linéaire
 Objectif : Trouver un utilisateur par son nom dans un tableau.
 
-Solution : 
+Programme : 
 ```js
 const users = [
   { id: 1, name: 'Alice' },
@@ -55,7 +96,8 @@ const user = users.find(user => user.name === targetName);
 console.log(user);
 ```
 
-.find() parcourt chaque élément et retourne le premier qui correspond à la condition (user.name === targetName). Si rien ne matche, il retourne undefined.
+Explication : `.find()` parcourt chaque élément et retourne le premier qui correspond à la condition `(user.name === targetName)`. Si rien ne matche, il retourne `undefined`.
+
 
 #### Tri
 Objectif : Trier une liste d’objets par âge croissant.
@@ -73,6 +115,7 @@ console.log(people);
 
 Attention : Le sort() trie par défaut en ASCII. En donnant une fonction (a, b) => a.age - b.age, on trie numériquement. Si le résultat est négatif, a vient avant b.
 
+
 #### Manipulation de données (réduction par exemple)
 Objectif : Calculer la somme des salaires.
 
@@ -88,6 +131,14 @@ console.log(total);
 ```
 
 .reduce() passe sur chaque élément et accumule une valeur (ici : somme des salaires). acc est le total courant, curr.salary est le salaire actuel.
+
+
+
+# Le challenge
+
+
+
+
 
 ### liste des algos les plus demandés en entretiens
 
