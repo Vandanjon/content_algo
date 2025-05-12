@@ -1,7 +1,4 @@
-# Réussir son entretien en algo
-
-
-# La théorie
+# L'ENTRETIEN EN ALGORITHME
 ## Déjà, qu'est-ce que c'est un algo ?
 Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique.  
 
@@ -75,176 +72,64 @@ un algo ne doit pas être confondu avec :
 - **un outil intelligent** (un algo peut être gourmand, mal écrit. Il manque la notion d'optimisation que nous n'avons pas abordée)
 
 
-# La pratique
-## Les algos les plus récurrents
-### liste des algos utiles pour les développeurs juniors
+# LA PRATIQUE
+Vous avez été engagé par le [HELLFEST](https://fr.wikipedia.org/wiki/Hellfest) pour un stage. Ils veulent vous faire développer différentes fonctionnalités sur leur site.  
 
-#### Recherche linéaire
-Objectif : Trouver un utilisateur par son nom dans un tableau.
-
-Programme : 
-```js
-const users = [
-  { id: 1, name: 'Alice' },
-  { id: 2, name: 'Bob' },
-  { id: 3, name: 'Charlie' },
-];
-
-const targetName = 'Bob';
-
-const user = users.find(user => user.name === targetName);
-console.log(user);
-```
-
-Explication : `.find()` parcourt chaque élément et retourne le premier qui correspond à la condition `(user.name === targetName)`. Si rien ne matche, il retourne `undefined`.
+D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique de ce qu'était un algo. C'est en fait à ça que servent les entretiens d'algos : est-ce que la personne en face de moi sait raisonner comme un développeur face à un problème ?
 
 
-#### Tri
-Objectif : Trier une liste d’objets par âge croissant.
+## Le top 3 des algos d'entretien
+### Somme des entiers
+**Principe** : On vous donne un tableau de nombres. Il faut trouver lesquels, additionnés, pourront donner une somme précise.
 
-```js
-const people = [
-  { name: 'Alice', age: 30 },
-  { name: 'Bob', age: 25 },
-  { name: 'Charlie', age: 35 },
-];
+**Contexte A** : Vous devez vérifier si un groupe peut jouer sur une scène spécifique en fonction du temps total de leur setlist. Vous avez un tableau contenant la durée de chaque chanson en minutes, et vous devez vérifier si une combinaison de chansons peut remplir exactement un créneau de 60 minutes.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
+[Solution ?](docs/integersSum_exampleA.md)
 
-people.sort((a, b) => a.age - b.age);
-console.log(people);
-```
+**Contexte B** : Un food truck partenaire du Hellfest doit préparer des commandes de boissons. Chaque commande est un tableau de volumes de boissons en centilitres. Vous devez vérifier si une combinaison de boissons peut remplir exactement un verre de 50 cl.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
+[Solution ?](docs/integersSum_exampleB.md)
 
-Attention : Le sort() trie par défaut en ASCII. En donnant une fonction (a, b) => a.age - b.age, on trie numériquement. Si le résultat est négatif, a vient avant b.
-
-
-#### Manipulation de données (réduction par exemple)
-Objectif : Calculer la somme des salaires.
-
-```js
-const employees = [
-  { name: 'Alice', salary: 3000 },
-  { name: 'Bob', salary: 2500 },
-  { name: 'Charlie', salary: 4000 },
-];
-
-const total = employees.reduce((acc, curr) => acc + curr.salary, 0);
-console.log(total);
-```
-
-.reduce() passe sur chaque élément et accumule une valeur (ici : somme des salaires). acc est le total courant, curr.salary est le salaire actuel.
+**Contexte C** : Un magasin de vêtements doit vérifier si une combinaison de tailles de vêtements peut remplir exactement une boîte de 100 cm de longueur pour l'expédition.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
+[Solution ?](docs/integersSum_exampleC.md)
 
 
+### Décomposer des mots
+**Principe** : On vous donne une phrase quelconque et il faut en changer des éléments automatiquement.
 
-# Le challenge
+**Contexte A** : Un fan envoie un message au groupe préféré du Hellfest. On veut détecter si ce message (un mot ou une phrase sans espace) est un palindrome, juste pour le fun.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split)  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)  
+[Solution ?](docs/stringsManipulation_exampleA.md)
 
+**Contexte B** : Lors de l'inscription, on génère un mot de passe temporaire mais on veut afficher un aperçu masqué, en remplaçant chaque lettre par *, sauf la première.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)  
+[Solution ?](docs/stringsManipulation_exampleB.md)
 
-
-
-
-### liste des algos les plus demandés en entretiens
-
-#### Somme de deux
-Objectif : Trouver deux nombres qui donnent 9.
-
-```js
-const numbers = [2, 7, 11, 15];
-const target = 9;
-
-function twoSum(nums, target) {
-  const map = new Map();
-  for (let i = 0; i < nums.length; i++) {
-    const complement = target - nums[i];
-    if (map.has(complement)) {
-      return [map.get(complement), i];
-    }
-    map.set(nums[i], i);
-  }
-}
-
-console.log(twoSum(numbers, target));
-```
+**Contexte C** : Dans le chat du site, on veut repérer certains mots interdits et les remplacer par [censuré]. Simple détection de mots exacts dans une phrase.  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)  
+[Solution ?](docs/stringsManipulation_exampleC.md)
 
 
-#### Palindrome
-Objectif : Vérifier si une string est un palindrome.
+### Suite mathématique
+**Principe** : On vous donne un nombre et il faut en déduire un autre nombre selon une formule mathématique.
 
-```js
-function isPalindrome(str) {
-  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const reversed = cleaned.split('').reverse().join('');
-  return cleaned === reversed;
-}
+**Contexte A** : Le Hellfest vend des billets par blocs. Le nombre de places dans chaque bloc suit la suite de Fibonacci : chaque bloc a autant de places que la somme des deux blocs précédents. On vous donne un numéro de bloc n, vous devez calculer combien de places contient ce bloc.  
+[Un peu d'aide ?](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci)  
+[Solution ?](docs/numbers_exampleA.md)
 
-console.log(isPalindrome('A man, a plan, a canal: Panama'));
-```
+**Contexte B** : Le Hellfest récompense ses fans les plus fidèles. Pour chaque achat, vous gagnez deux fois plus de points que lors du précédent. Si le premier achat rapporte 10 points, combien de points allez-vous recevoir pour le nᵉ achat ?  
+[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/pow)  
+[Solution ?](docs/numbers_exampleB.md)
 
-#### Fibonacci
-Objectif : Calculer le nᵉ nombre de Fibonacci
-
-```js
-// Version récursive (simple mais peu efficace)
-function fibRecursive(n) {
-  if (n <= 1) return n;
-  return fibRecursive(n - 1) + fibRecursive(n - 2);
-}
-
-// Version itérative (optimisée)
-function fibIterative(n) {
-  let a = 0, b = 1;
-  for (let i = 0; i < n; i++) {
-    [a, b] = [b, a + b];
-  }
-  return a;
-}
-
-console.log(fibIterative(6));
-```
-Itératif
-Utilise des boucles (for, while) pour répéter une action.
-
-Gère les étapes dans la mémoire locale (variables).
-
-Plus performant et économe en ressources.
-
-✅ Préféré en production si possible.
+**Contexte C** : Pendant les répétitions, le volume sonore augmente régulièrement de 3 décibels chaque seconde, en partant de 60 dB. On vous demande de calculer le volume après n secondes.  
+[Solution ?](docs/numbers_exampleC.md)
 
 
-Récursif
-Une fonction s'appelle elle-même pour résoudre une version plus simple du problème.
-
-Nécessite une condition d'arrêt (if (n <= 1) return n).
-
-Peut être élégant, mais moins performant (stack overflow si trop profond).
-
-❌ Peu adapté pour des n élevés sans optimisation (memoization / tail-call).
+# LE CHALLENGE
+## [Challenge guidé](CHALLENGE_A.md)
 
 
-## Mises en situation : LE [HELLFEST](https://fr.wikipedia.org/wiki/Hellfest)
-
-### mise en situation 1
-
-Il faut monter un site de vente de billets en ligne. Vous vous occupez de la partie qui affiche le prix à payer en fonction du nombre de billets commandés. La partie HTML/CSS en soit, c'est assez facile.
-Mais comment faire pour que le prix affiché en bas de page varie en fonction du nombre de billets ?
-
-=> voir la solution ici
-
-### mise en situation 2
-
-Vous travaillez sur la billetterie du Hellfest Store qui vend aussi du merchandising (t-shirts, vinyles, posters, etc.). Chaque produit a un id, un nom, et un prix. Lorsqu’un utilisateur clique sur un article, il faut retrouver son prix à partir d’un catalogue de plusieurs centaines de milliers de références.
-
-💡 Algorithme attendu :
-Une recherche linéaire dans un tableau d’objets (ex. products.find(p => p.id === clickedId)), car les données ne sont pas triées ni indexées.
-
-=> voir la solution ici
-
-### mise en situation 3
-
-Vous développez une interface de gestion pour les bénévoles du Hellfest. Vous avez une liste d’inscrits avec leur genre déclaré ("H" ou "F"), et devez afficher le nombre de vestiaires à prévoir. Pour cela, on vous demande de trier les bénévoles par genre pour les compter et les répartir.
-
-💡 Algorithme attendu :
-Un tri avec Array.prototype.sort() ou une logique de regroupement (via reduce, ou filter) pour séparer les genres et les compter. L’objectif n’est pas juste de trier, mais de faciliter un traitement en aval.
-
-=> voir la solution ici
-
-## LE CHALLENGE
-
-à faire
+## [Challenge libre](CHALLENGE_B.md)
