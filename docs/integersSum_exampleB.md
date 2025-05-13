@@ -3,7 +3,7 @@ Un food truck partenaire du Hellfest doit préparer des commandes de boissons. C
 
 Exemple :
 
-Copier
+```js
 function canFillGlass(drinkVolumes, glassVolume) {
     const n = drinkVolumes.length;
     for (let i = 0; i < (1 << n); i++) {
@@ -23,3 +23,4 @@ function canFillGlass(drinkVolumes, glassVolume) {
 const drinkVolumes = [10, 20, 15, 25, 30];
 const glassVolume = 50;
 console.log(canFillGlass(drinkVolumes, glassVolume)); // true
+```

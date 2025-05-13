@@ -1,8 +1,6 @@
 Dans le chat du site, on veut repérer certains mots interdits et les remplacer par [censuré]. Simple détection de mots exacts dans une phrase.
 
-js
-Copier
-Modifier
+```js
 const phrase = "Ce concert est nul";
 const motsInterdits = ["nul", "pourri"];
 
@@ -14,3 +12,4 @@ function filtrer(texte) {
 }
 
 console.log(filtrer(phrase)); // Ce concert est [censuré]
+```
