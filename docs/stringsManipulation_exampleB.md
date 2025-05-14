@@ -1,4 +1,4 @@
-[retour au sommaire](./)  
+[retour au sommaire](../#le-top-3-des-algos-dentretien)  
 
 Lors de l'inscription, on génère un mot de passe temporaire mais on veut afficher un aperçu masqué, en remplaçant chaque lettre par *, sauf la première.
 

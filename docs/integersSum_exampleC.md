@@ -1,4 +1,4 @@
-[retour au sommaire](./)  
+[retour au sommaire](../#le-top-3-des-algos-dentretien)  
 
 Problème :
 Un magasin de vêtements doit vérifier si une combinaison de tailles de vêtements peut remplir exactement une boîte de 100 cm de longueur pour l'expédition.

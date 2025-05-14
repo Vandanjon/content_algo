@@ -1,4 +1,4 @@
-[retour au sommaire](./)  
+[retour au sommaire](../#le-top-3-des-algos-dentretien)  
 
 Dans le chat du site, on veut repérer certains mots interdits et les remplacer par [censuré]. Simple détection de mots exacts dans une phrase.
 

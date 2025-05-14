@@ -1,4 +1,4 @@
-[retour au sommaire](./)  
+[retour au sommaire](../#le-top-3-des-algos-dentretien)  
 
 ```js
 function pointsFidelite(n) {
