@@ -1,3 +1,5 @@
+[retour au sommaire](./)  
+
 Problème :
 Un magasin de vêtements doit vérifier si une combinaison de tailles de vêtements peut remplir exactement une boîte de 100 cm de longueur pour l'expédition.
 

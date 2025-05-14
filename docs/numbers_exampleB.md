@@ -1,3 +1,5 @@
+[retour au sommaire](./)  
+
 ```js
 function pointsFidelite(n) {
   return 10 * Math.pow(2, n - 1);

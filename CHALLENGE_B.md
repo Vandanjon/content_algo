@@ -1,4 +1,4 @@
-[revoir l'épisode précédent](./)
+[retour au sommaire](./)  
 
 ## Challenge libre
 Vous êtes chargé de développer une fonctionnalité pour optimiser la gestion des files d'attente aux stands du Hellfest. Voici le problème :

@@ -1,3 +1,5 @@
+[retour au sommaire](./)  
+
 Un fan envoie un message au groupe préféré du Hellfest. On veut détecter si ce message (un mot ou une phrase sans espace) est un palindrome, juste pour le fun.
 
 ```js

@@ -1,3 +1,5 @@
+[retour au sommaire](./)  
+
 Lors de l'inscription, on génère un mot de passe temporaire mais on veut afficher un aperçu masqué, en remplaçant chaque lettre par *, sauf la première.
 
 ```js
