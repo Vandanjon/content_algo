@@ -80,7 +80,7 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 
 ## Le top 3 des algos d'entretien
 ### Somme des entiers
-**Principe** : On vous donne un tableau de nombres. Il faut trouver lesquels, additionnés, pourront donner une somme précise.
+**Thématique** : On vous donne un tableau de nombres. Il faut trouver lesquels, additionnés, pourront donner une somme précise.
 
 **Contexte A** : Vous devez vérifier si un groupe peut jouer sur une scène spécifique en fonction du temps total de leur setlist. Vous avez un tableau contenant la durée de chaque chanson en minutes, et vous devez vérifier si une combinaison de chansons peut remplir exactement un créneau de 60 minutes.  
 [Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
@@ -96,7 +96,7 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 
 
 ### Décomposer des mots
-**Principe** : On vous donne une phrase quelconque et il faut en changer des éléments automatiquement.
+**Thématique** : On vous donne une phrase quelconque et il faut en changer des éléments automatiquement.
 
 **Contexte A** : Un fan envoie un message au groupe préféré du Hellfest. On veut détecter si ce message (un mot ou une phrase sans espace) est un palindrome, juste pour le fun.  
 [Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split)  
@@ -108,13 +108,13 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 [Solution ?](docs/stringsManipulation_exampleB.md)
 
 **Contexte C** : Dans le chat du site, on veut repérer certains mots interdits et les remplacer par [censuré]. Simple détection de mots exacts dans une phrase.  
-[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
-[Un peu d'aide ?](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)  
+[indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
+[indice 2](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)  
 [Solution ?](docs/stringsManipulation_exampleC.md)
 
 
 ### Suite mathématique
-**Principe** : On vous donne un nombre et il faut en déduire un autre nombre selon une formule mathématique.
+**Thématique** : On vous donne un nombre et il faut en déduire un autre nombre selon une formule mathématique.
 
 **Contexte A** : Le Hellfest vend des billets par blocs. Le nombre de places dans chaque bloc suit la suite de Fibonacci : chaque bloc a autant de places que la somme des deux blocs précédents. On vous donne un numéro de bloc n, vous devez calculer combien de places contient ce bloc.  
 [Un peu d'aide ?](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci)  
@@ -129,6 +129,11 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 
 
 # LE CHALLENGE
+Vous avez le choix entre deux défis.  
+Le challenge guidé vous donne quelques indices mais vous laisse le choix de la solution.  
+Le challenge libre va nécessiter de la recherche et de l'imagination.
+
+
 ## [Challenge guidé](CHALLENGE_A.md)
 
 

@@ -1,10 +1,17 @@
+---
+show_clone: false
+# show_toc: false
+title: "Somme des entiers"
+description: "contexte A"
+---
+
 [retour au sommaire](../#le-top-3-des-algos-dentretien)  
 
-Problème :
+## Problème
 Vous devez vérifier si un groupe peut jouer sur une scène spécifique en fonction du temps total de leur setlist. Vous avez un tableau contenant la durée de chaque chanson en minutes, et vous devez vérifier si une combinaison de chansons peut remplir exactement un créneau de 60 minutes.
 
-Exemple :
-
+## Exemple
+### Explications en code
 ```js
 function canFillTimeSlot(songDurations, slotDuration) {
     // Étape 1 : Calculer le nombre total de combinaisons possibles
@@ -40,7 +47,7 @@ const slotDuration = 60; // Durée du créneau en minutes
 console.log(canFillTimeSlot(songDurations, slotDuration)); // true
 ```
 
-### Explications détaillées :
+### Explications détaillées
 1. **Comprendre le problème** :
    - On a une liste de durées de chansons.
    - On doit vérifier si une combinaison de ces chansons peut remplir exactement un créneau donné.
@@ -63,7 +70,7 @@ console.log(canFillTimeSlot(songDurations, slotDuration)); // true
 
 Ce raisonnement permet de résoudre le problème en explorant toutes les possibilités de manière systématique.
 
-## Code final :
+## Code final
 ```js
 function canFillTimeSlot(songDurations, slotDuration) {
     const n = songDurations.length;
