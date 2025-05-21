@@ -4,7 +4,7 @@
 
 Un **algorithme** est une suite d'instructions claires et précises permettant de résoudre un problème ou d'accomplir une tâche. Il sert de plan pour guider un programme informatique.
 
-Sans algorithmes, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'intéragir avec les utilisateurs.
+Sans algorithme, on en serait resté au web 1.0, des sites statiques qui ne font que présenter au lieu d'interagir avec les utilisateurs.
 
 ## Les caractéristiques d'un algorithme
 
@@ -15,12 +15,12 @@ TOUTE tâche, même la plus complexe, peut être découpée en une **série d'é
 Exemple : Remplir un verre d'eau
 
 ```md
-1. prendre un verre vide.
+1. Prendre un verre vide.
 2. Ouvrir une bouteille d'eau.
 3. Verser l'eau dans le verre.
 ```
 
-Donc : un algorithme doit être décomposable en étapes simples, compréhensibles et exécutables une à une, même par un humain sans formation particulière.
+Un algorithme doit être décomposable en étapes simples, compréhensibles et exécutables une à une, même par un humain sans formation particulière.
 {: .alert-info }
 
 ### Une suite finie d'étapes
@@ -31,13 +31,13 @@ Exemple : Remplir des verres d'eau.
 
 ```md
 1. Compter le nombre de verres.
-2. prendre un verre vide.
+2. Prendre un verre vide.
 3. Ouvrir une bouteille d'eau si elle n'est pas déjà ouverte.
 4. Verser l'eau dans le verre choisi.
 5. Recommencer tant que tous les verres ne sont pas remplis.
 ```
 
-Donc : un algorithme doit être fini, c'est-à-dire qu'il se termine après un nombre défini d'actions.
+Un algorithme doit être fini, c'est-à-dire qu'il se termine après un nombre défini d'actions.
 {: .alert-info }
 
 ### La précision
@@ -51,7 +51,7 @@ Exemple : Déterminer si on est malade
 2. Sinon, afficher "Température normale".
 ```
 
-Donc : un algorithme doit être précis, c'est-à-dire que la machine doit savoir exactement quoi faire à chaque étape, sans interprétation possible.
+Un algorithme doit être précis, c'est-à-dire que la machine doit savoir exactement quoi faire à chaque étape, sans interprétation possible.
 {: .alert-info }
 
 ### Cibler ses conditions d'exécution
@@ -68,7 +68,7 @@ Traitement : comparer à une température de type nombre exprimée en degrés Ce
 Données en sortie : un message de type texte et de valeur "fièvre" ou de valeur "température normale".
 ```
 
-Donc : un algorithme prend des données précises en entrée et fournit des données précises en sortie.
+Un algorithme prend des données précises en entrée et fournit des données précises en sortie.
 {: .alert-info }
 
 Attention !
@@ -81,19 +81,48 @@ un algo ne doit pas être confondu avec :
 
 # LA PRATIQUE
 
+## Le top des algos d'entretien
+
 Vous avez été engagé par le [HELLFEST](https://fr.wikipedia.org/wiki/Hellfest) pour un stage. Ils veulent vous faire développer différentes fonctionnalités sur leur site.
 
 D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique de ce qu'était un algo. C'est en fait à ça que servent les entretiens d'algos : est-ce que la personne en face de moi sait raisonner comme un développeur face à un problème ?
 
-## Le top 3 des algos d'entretien
+Dans les mises en situation suivantes, on va vous présenter :
 
-### Somme des entiers
+- une **thématique** qui est le sujet dont il est question.
+- un **contexte** qui est la situation dans laquelle vous devez appliquer l'algo.
+- des **ressources** qui peuvent vous être utiles pour trouver la solution.
 
-**Thématique** : On vous donne un tableau de nombres. Il faut trouver lesquels, additionnés, pourront donner une somme précise.
+## Somme des entiers
 
-**Contexte A** : Vous devez vérifier si un groupe peut jouer sur une scène spécifique en fonction du temps total de leur setlist. Vous avez un tableau contenant la durée de chaque chanson en minutes, et vous devez vérifier si une combinaison de chansons peut remplir exactement un créneau de 60 minutes.  
-[Indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
-[Solution ?](docs/integersSum_exampleA.md)
+**Thématique** : On vous donne un tableau de nombres. Il faut trouver lesquels, additionnés, pourront donner une somme précise (sans dépasser une valeur maximale).
+
+### Contexte A
+
+Pour jouer sur une scène, un groupe doit remplir un créneau de **une heure maximum**. Ils donnent donc **une liste** de chacune de leurs **chansons en minutes**, et vous devez vérifier si la durée totale est compatible avec la scène.
+BONUS : Sinon, trouvez une **combinaison** de chansons qui peut remplir ce créneau (sans dépasser 60 minutes).
+
+**Données possibles en entrée :**
+
+```markdown
+tableau des chansons en minutes
+créneau d'une heure (60 minutes)
+```
+
+**Données attendues en sortie :**
+
+```markdown
+résultat positif si le groupe peut jouer sur scène, négatif sinon.
+```
+
+**Ressources :**
+
+- [Indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [Aide au raisonnement](resources/intSum_exampleA.md)
+
+**Solutions possibles :**
+
+| [JavaScript](solutions/contextA/intSum_exA_js.md) | [Python](solutions/intSum_exA_py.md) | [Java](solutions/intSum_exA_java.md) | [PHP](solutions/intSum_exA_php.md) |
 
 **Contexte B** : Un food truck partenaire du Hellfest doit préparer des commandes de boissons. Chaque commande est un tableau de volumes de boissons en centilitres. Vous devez vérifier si une combinaison de boissons peut remplir exactement un verre de 50 cl.  
 [Indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
@@ -103,7 +132,7 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 [Indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
 [Solution ?](docs/integersSum_exampleC.md)
 
-### Décomposer des mots
+## Décomposer des mots
 
 **Thématique** : On vous donne une phrase quelconque et il faut en changer des éléments automatiquement.
 
@@ -121,7 +150,7 @@ D'abord, entretien d'embauche, ils veulent voir si vous avez compris la logique 
 [Indice 2](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)  
 [Solution ?](docs/stringsManipulation_exampleC.md)
 
-### Suite mathématique
+## Suite mathématique
 
 **Thématique** : On vous donne un nombre et il faut en déduire un autre nombre selon une formule mathématique.
 
