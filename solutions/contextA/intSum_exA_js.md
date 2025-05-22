@@ -12,7 +12,7 @@ Pour jouer sur une scène, un groupe doit remplir un créneau de **une heure max
 
 ## Code
 
-1. Algorithme bonus simple
+A. Algorithme bonus simple
 
 ```js
 function findCombination(tracksList, maxDuration) {
@@ -30,7 +30,7 @@ function findCombination(tracksList, maxDuration) {
 }
 ```
 
-2. Algorithme plus court
+B. Algorithme plus court
 
 ```js
 const findCombination = (tracksList, maxDuration) => {
