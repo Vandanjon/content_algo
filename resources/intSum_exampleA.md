@@ -24,8 +24,6 @@ Pour jouer sur une scène, un groupe doit remplir un créneau de **une heure max
 
 On va écrire l'algorithme en javascript, mais vous pouvez l'écrire dans le langage de votre choix.
 
-1. Algorithme de base
-
 **Étape 1** : lister les variables minimum nécessaires.
 
 ```js
