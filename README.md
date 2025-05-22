@@ -124,7 +124,10 @@ résultat positif si le groupe peut jouer sur scène, négatif sinon.
 
 | [JavaScript](solutions/contextA/intSum_exA_js.md) | [Python](solutions/intSum_exA_py.md) | [Java](solutions/intSum_exA_java.md) | [PHP](solutions/intSum_exA_php.md) |
 
-**Contexte B** : Un food truck partenaire du Hellfest doit préparer des commandes de boissons. Chaque commande est un tableau de volumes de boissons en centilitres. Vous devez vérifier si une combinaison de boissons peut remplir exactement un verre de 50 cl.  
+### Contexte B
+
+Un food truck partenaire du Hellfest doit préparer des commandes de boissons. Chaque commande est un tableau de volumes de boissons en centilitres. Vous devez vérifier si une combinaison de boissons peut remplir exactement un verre de 50 cl.
+
 [Indice 1](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration)  
 [Solution ?](docs/integersSum_exampleB.md)
 

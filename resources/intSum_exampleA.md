@@ -4,7 +4,7 @@ title: "Somme des entiers"
 description: "contexte A"
 ---
 
-[retour au sommaire](../../#contexte-a)
+[retour au sommaire](../#contexte-a)
 
 ## Problème
 
